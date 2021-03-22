@@ -34,7 +34,7 @@ router.post('/register', (req, res) => {
                 });
                 
                 const newNotification = new Notification({
-                    userID: newUser._id,
+                    userID: newUser.id,
                     text: "Welcome to Waywa, please create your profile."
                 });
                 
